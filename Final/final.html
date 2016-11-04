@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Meta Tags Needed for Bootstrap -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Bootstrap -->
+ 
+<link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS -->
+
+<link href="upcomingsports.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!-- Javascript -->
+
+<script type="text/javascript"></script>
+
+<!-- Moment JS -->
+
+<script src="moment.js"></script>
+
+<!-- JQuery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<title>UpComingSports</title>
+
+
+<script>
+
+$(function() {
+	$('tr.parent')
+		.css("cursor","pointer")
+		.attr("title","Click to expand/collapse")
+		.click(function(){
+			$(this).siblings('.child-'+this.id).toggle();
+		});
+	$('tr[class^=child-]').hide().children('td');
+
+});
+
+</script>
+
+</head>
+
+
+<div class="background">
+
+<body>
+
+<div class="container">
+
+<!-- Clock -->
+
+<div id="clock" align="right">
+
+                              <iframe src="http://free.timeanddate.com/clock/i55xtpc1/n240/fcfff/tc000/pc000/th2/ta1" frameborder="0" width="156" height="18"></iframe>
+</div>
+
+<!-- Header -->
+
+<header class="header">
+    
+      <div class="row">
+                      <div class="col-lg-3">
+                                           <img src="images/header/logo.png" width="300" height="100" class="img-thumbnail"/>
+                                           <h4 style="margin-top: 25px;">24 Hour Sports Viewing and Betting Guide</h4>
+                                           <img src="images/header/facebook.png" height="35" width="35">                                           
+                                           <img src="images/header/twitter.png" height="25" width="25">
+                                           <img src="images/header/bird.png" height="30" width="30">
+                                           <p>Get Involved</p>
+                      </div>
+     
+
+
+                      <div class="col-lg-6" id="crown">
+                                           <img class="center-block" src="images/header/crown.png" width="500" height="200">
+                                           <p>Why bet with Crownbet</p>
+                      </div>
+
+                      <div class="col-lg-3">
+                                           <img src="images/header/betfair.jpg" width="250" height="200"/>
+                                           <p>Betfair , what is it?</p>
+                      </div>
+       </div><!-- End Row -->
+
+
+</header><!-- End Header -->
+
+<hr>
+
+<select id="sel1" onchange="myFunction()">
+
+<option value="VIC">VIC</option>
+<option value="NSW">NSW</option>
+<option value="QLD">QLD</option>
+<option value="WA">WA</option>
+<option value="SA">SA</option>
+<option value="TAS">TAS</option>
+<option value="NT">NT</option>
+<option value="ACT">ACT</option>
+
+</select>
+
+<p>Please select your correct time zone!!! All odds from crownbet.com.au * Subject to Change. </p>
+
+
+<div class="row">
+                 <div class="col-lg-12">
+
+                                         <table class="table" id="myTable">
+
+                                          <tr>
+                                              <th>Start Time</th>
+                                              <th>Sport</th> 
+                                              <th>Match</th> 
+                                              <th></th> 
+                                              <th></th> 
+                                              <th>Odds</th> 
+                                              <th></th> 
+                                              <th></th> 
+                                              <th></th> 
+                                              <th>Channel</th> 
+                                              <th></th> 
+                                          </tr> 
+                                                                          
+                                                                          <tbody>
+                                          <tr class="parent" id="one">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+
+ <tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+<tr class="parent">
+
+                                                           <td name="orignaltime">08/24/2016 04:45 pm</td>
+                                                           <td align="left">NHL</td>
+                                                           <td>New York Rangers vs Detroit Red Wings</td>
+                                                           <td><img src="images/Promotions.png" height="40px" width="60px"></td>
+                                                           <td><img src="images/NHL/New York Rangers.png" height="35px" weight="35px"</td>
+                                                           <td>1.91</td>
+                                                           <td>vs</td>
+                                                           <td>1.91</td>
+                                                           <td><img src="images/NHL/Detroit Red Wings.png" height="35px" width="35px"</td>
+                                                           <td><img src="images/tvLogo/ESPN2.png" height= "40px" width="55px"></td>
+                                                           <td>509</td>
+                                        </tr>
+
+
+<tr class="child-one" bgcolor="#CCCCCC">
+<td colspan="11">Test</td>
+</tr>
+
+
+
+
+
+                                                                          
+
+
+
+                                                                          </tbody>
+                                         </table>
+
+
+                 </div>
+</div><!-- End Row -->
+
+
+</div><!-- end container -->
+</body>
+</div><!-- end background -->
+</html>

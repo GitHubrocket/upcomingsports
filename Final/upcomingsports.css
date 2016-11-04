@@ -1,0 +1,108 @@
+
+
+.background {
+
+background-color : grey;
+ background-image: url("http://www.walldevil.com/wallpapers/a83/wallpapers-football-desktop-cool-verdy-background-stadiums-stadium-micro-superb-super-wallpaper-beautiful.jpg");
+background-size: cover;  
+}
+
+.container {
+
+background-color : black;
+
+}
+
+.header {
+
+font-family : Lucida Grande;
+font-weight: bold;
+border : 0;
+margin: 0px;
+padding: 0px;
+
+
+}
+
+
+.header img {
+
+
+border : 0;
+margin: 0px;
+padding: 0px;
+color
+
+
+}
+
+
+body {
+      font-family: Verdana,arial,sans-serif;
+font-weight: bold;
+color: #ffffff;
+
+
+
+}
+
+
+      
+
+.table > tbody > tr > td {
+
+margin-top: 55px;
+vertical-align: middle;
+font-weight: bold;
+
+
+}
+
+.table > tbody > tr > th {
+
+margin-top: 55px;
+vertical-align: middle;
+font-weight: bold;
+color: orange;
+
+
+}
+
+
+p {
+
+margin-top: 5px;
+
+
+}
+
+
+
+.table {
+
+margin-top: 25px;
+font-weight: bold;
+font-size: small;
+
+}
+
+
+
+tr:hover td { background-color:grey }
+td.selected { background-color: green; }
+tr:hover td.selected { background-color: lime; }
+
+
+.child-one {
+
+color: black;
+
+}
+
+#sel1 {
+
+background-color: black;
+color: orange;
+
+}
+
