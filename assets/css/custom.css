@@ -1,0 +1,209 @@
+body {
+    font-family:'raleway', sans-serif;
+    background: url('http://www.walldevil.com/wallpapers/a83/wallpapers-football-desktop-cool-verdy-background-stadiums-stadium-micro-superb-super-wallpaper-beautiful.jpg') fixed center;
+}
+section .container {
+    background: black;
+    color: white;
+}
+
+/*header*/
+
+a.navbar-brand {
+    padding: 0;
+    margin: 0;  
+}
+
+/*Global*/
+h1,h2,h3,h4,h5,h6 {
+    -webkit-font-smoothing:antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+    font-family: 'bebas-neue';
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1,h2 {
+    margin: 0 0 40px;
+}
+h3 {
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 18px;
+}
+.navbar-nav {
+    font-size: 18px;
+}
+
+
+
+#banner {
+    width: 100%;
+    height: 350px;
+    margin: 0;
+}
+
+/*table*/
+.table .match {
+    width: 400px;
+}
+.table .match img {
+   margin-left: 30px; 
+}
+.table tbody tr:hover {
+    background: #3e4249;
+    cursor: pointer;
+}
+
+.table {
+
+    margin-top: 15px;
+
+}
+
+.icon1 {
+
+
+ position: relative;
+    left: 30px;
+}
+
+.icon2 {
+
+
+ position: relative;
+    right: 30px;
+}
+
+#odds {
+
+    position: relative;
+    left: 50px;
+
+}
+
+#channel {
+
+ position: relative;
+    left: 120px;
+
+}
+
+
+/*footer*/
+footer {
+
+    background:black;
+}
+
+footer h2 {
+    font-size: 35px;
+    color: white;
+}
+
+footer ul li {
+    margin: 5px 10px;
+    font-size: 18px;
+
+}
+
+footer ul li a {
+    color: #ccc;
+}
+
+footer h4{
+    width: 250px;
+    color: #0094ff;
+    display: inline;
+
+}
+footer ul li {
+    margin: 8px;
+}
+
+footer ul li a:hover {
+    color: #0094ff;
+    text-decoration: none;
+}
+
+.badge.social {
+    font-size: 20px;
+    width: 40px;
+    height: 42px;
+    line-height: 40px;
+    border-radius: 100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius: 100%;
+    color: white;
+    background: #808080;
+    margin-right: -10px;
+ 
+}
+.badge.social.Twitter:hover {
+    background: #55acee;
+}
+.badge.social.facebook:hover {
+    background: #3b5998;
+}
+.badge.social.gplus:hover {
+    background: #db4b39;
+}
+footer {
+    padding-top: 15px;
+}
+
+footer .copyrights {
+    margin: 0;
+    color: #0094ff;
+    font-size: 14px; 
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/*media queries*/
+
+
+@media screen and (max-width: 991px) {
+  #banner .col-sm-5 img ,#banner .col-sm-4 img{
+    width: 200px;
+    height: 150px;  
+}
+}
+
+@media screen and (max-width: 741px) {
+
+
+#banner .col-sm-5 img ,#banner .col-sm-4 img{
+    width: 200px;
+    height: 150px;  
+}
+
+
+
+}
+
+@media screen and (max-width: 541px) {
+    header .navbar-nav {
+    padding-top: 20px;
+}
+#banner, #banner .container{
+    height: 600px;
+    background: black;
+}
+#banner .col-sm-5 img ,#banner .col-sm-4 img{
+    width: 200px;
+    height: 150px;  
+}
+#banner .col-sm-5 img {
+    margin-left: 100px;
+}
+#sports .table {
+    max-width: 150px;
+}
+
+}
