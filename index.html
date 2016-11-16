@@ -22,8 +22,11 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+
+
     </head>
-    <body>
+    <body onload = "loadFunction()">
+
        
         <section id="banner" style=" margin-top: 10px; clear: both; ">
             <div class="container" style="background: #000;padding-top: 30px; color: white; height: 350px;">
@@ -49,7 +52,7 @@
 
                     </div>
                     <div class="col-sm-6">
-                        <img src=assets/img/logo2.jpg alt="crown" width="560" height="230"/>
+                        <img src=assets/img/logo3.jpg alt="crown" width="560" height="230"/>
                     </div>
                     <div class="col-sm-3" style="text-align: center;">
                         <img src="assets/img/betfair.jpg" alt="betfair" width="270" height="200"/>
@@ -61,9 +64,11 @@
         </section>
         <section id="sports" style="min-height: 500px; ">
             <div class="container">
-                <p class="lead">Please select your correct time zone, All odds from crownbet.com.au * Subject to change</p>
+                <button type="button" data-style="btn-primary" onclick="todaySport()">Todays Sports</button> <button type="button" data-style="btn-primary" onclick="moroSport()">Tomorrows Sports</button>
+
+<hr>
              
-                                <select class="selectpicker show-menu-arrow" data-style="btn-primary" name="Time-zone">
+                                <select class="selectpicker show-menu-arrow" data-style="btn-primary" name="Time-zone" onchange="myFunction()" id="sel1">
                                       <optgroup label="Time-zone">
                                         <option>VIC</option>
                                         <option>NSW</option>
@@ -76,8 +81,8 @@
                                       </optgroup>
                                  </select>
                  
-                <table class="table">
-    <thead>
+                <table class="table" id="myTable">
+<thead>
       <tr>
         <th>Start Time</th>
         <th>Sport</th>
@@ -86,9 +91,10 @@
         <th id="channel">Channel</th>
       </tr>
     </thead>
+    
     <tbody>
       <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td name="orignaltime"></td>
         <td align="left">NHL</td>
         <td class="match"><span>New York Rangers vs Detroit Red</span>
             <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
@@ -101,227 +107,152 @@
           
       </tr>
      <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-            <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-    <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-            <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-        <tr class="description" style="width: 100%; height: 60px; display: none;">
-       <td colspan="11">Test</td>
-     </tr>
-      <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-            <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-    <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-            <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-        <tr class="description" style="width: 100%; height: 60px; display: none;">
-       <td colspan="11">Test</td>
-     </tr>
-      <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-            <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-    <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-            <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-        <tr class="description" style="width: 100%; height: 60px; display: none;">
-       <td colspan="11">Test</td>
-     </tr>
-      <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-            <tr>
-        <td name="orignaltime">08/24/2016 04:45 pm</td>
-        <td align="left">NHL</td>
-        <td class="match"><span>New York Rangers vs Detroit Red</span>
-            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
-            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
-        </td>
-        <td align="center">1.91   vs   1.91</td>
-        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
-        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
-        </td>
-          
-      </tr>
-     <tr class="description" style="width: 100%; height: 60px; display: none;">
-         <td colspan="11" style="overflow: visible;">Test</td>
-     </tr>
-    <tr>
 
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>The second test between Australia and South Africa begins this Saturday at Hobarts Bellerive Oval, and The Cricket Trader is back to preview the crucial match and provide you with his betting strategy. It's difficult to have sufficient faith in the Aussies given that they have lost ten of their past 17 matches in all formats, including their last six straight. Conversely South Africa are coming off an astounding win in Perth and have won their last eight matches across all formats so they have plenty of confidence coming into the match.</p></td>
+     </tr>
+
+      <tr>
+        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td align="left">NHL</td>
+        <td class="match"><span>New York Rangers vs Detroit Red</span>
+            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
+            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
+        </td>
+        <td align="center">1.91   vs   1.91</td>
+        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
+        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
+        </td>
+          
+      </tr>
+     <tr class="description" style="width: 100%; height: 60px; display: none;">
+
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>Testing</p></td>
+     </tr>
+
+      <tr>
+        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td align="left">NHL</td>
+        <td class="match"><span>New York Rangers vs Detroit Red</span>
+            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
+            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
+        </td>
+        <td align="center">1.91   vs   1.91</td>
+        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
+        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
+        </td>
+          
+      </tr>
+     <tr class="description" style="width: 100%; height: 60px; display: none;">
+
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>The second test between Australia and South Africa begins this Saturday at Hobarts Bellerive Oval, and The Cricket Trader is back to preview the crucial match and provide you with his betting strategy. It's difficult to have sufficient faith in the Aussies given that they have lost ten of their past 17 matches in all formats, including their last six straight. Conversely South Africa are coming off an astounding win in Perth and have won their last eight matches across all formats so they have plenty of confidence coming into the match.</p></td>
+     </tr>
+
+      <tr>
+        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td align="left">NHL</td>
+        <td class="match"><span>New York Rangers vs Detroit Red</span>
+            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
+            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
+        </td>
+        <td align="center">1.91   vs   1.91</td>
+        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
+        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
+        </td>
+          
+      </tr>
+     <tr class="description" style="width: 100%; height: 60px; display: none;">
+
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>Testing</p></td>
+     </tr>
+   
+      <tr>
+        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td align="left">NHL</td>
+        <td class="match"><span>New York Rangers vs Detroit Red</span>
+            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
+            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
+        </td>
+        <td align="center">1.91   vs   1.91</td>
+        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
+        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
+        </td>
+          
+      </tr>
+     <tr class="description" style="width: 100%; height: 60px; display: none;">
+
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>The second test between Australia and South Africa begins this Saturday at Hobarts Bellerive Oval, and The Cricket Trader is back to preview the crucial match and provide you with his betting strategy. It's difficult to have sufficient faith in the Aussies given that they have lost ten of their past 17 matches in all formats, including their last six straight. Conversely South Africa are coming off an astounding win in Perth and have won their last eight matches across all formats so they have plenty of confidence coming into the match.</p></td>
+     </tr>
+
+      <tr>
+        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td align="left">NHL</td>
+        <td class="match"><span>New York Rangers vs Detroit Red</span>
+            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
+            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
+        </td>
+        <td align="center">1.91   vs   1.91</td>
+        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
+        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
+        </td>
+          
+      </tr>
+     <tr class="description" style="width: 100%; height: 60px; display: none;">
+
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>Testing</p></td>
+     </tr>
+
+      <tr>
+        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td align="left">NHL</td>
+        <td class="match"><span>New York Rangers vs Detroit Red</span>
+            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
+            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
+        </td>
+        <td align="center">1.91   vs   1.91</td>
+        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
+        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
+        </td>
+          
+      </tr>
+     <tr class="description" style="width: 100%; height: 60px; display: none;">
+
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>The second test between Australia and South Africa begins this Saturday at Hobarts Bellerive Oval, and The Cricket Trader is back to preview the crucial match and provide you with his betting strategy. It's difficult to have sufficient faith in the Aussies given that they have lost ten of their past 17 matches in all formats, including their last six straight. Conversely South Africa are coming off an astounding win in Perth and have won their last eight matches across all formats so they have plenty of confidence coming into the match.</p></td>
+     </tr>
+
+      <tr>
+        <td name="orignaltime">08/24/2016 04:45 pm</td>
+        <td align="left">NHL</td>
+        <td class="match"><span>New York Rangers vs Detroit Red</span>
+            <img src="assets/img/Promotions.png" height="40px" width="60px" alt="promotion"/>
+            <img src="assets/img/Nyrangers.png" height="35px" alt="rangers" width="35px" class="icon1"/>
+        </td>
+        <td align="center">1.91   vs   1.91</td>
+        <td align="left"><img src="assets/img/Detroit Red Wings.png" alt="wings" height="35px" width="35px" class="icon2"/>
+        <img src="assets/img/ESPN2.png" height= "40px" alt="espn" width="55px" align="right">
+        </td>
+          
+      </tr>
+     <tr class="description" style="width: 100%; height: 60px; display: none;">
+
+         <td colspan="11" style="overflow: visible;"><h6>Australia vs South Africa - Second Test</h6>
+
+<p>Testing</p></td>
+     </tr>
+   
      
     </tbody>
   </table>
@@ -339,4 +270,111 @@
         
         
     </body>
+
+
+<script> <!--Drop Down Function-->
+
+function myFunction() {
+
+    var cellData = ["2016-08-24 15:45", "2016-08-24 16:00","2016-08-24 16:00","2016-08-24 15:45", "2016-08-24 16:00","2016-08-24 16:00","2016-08-24 15:45", "2016-08-24 15:45",];
+    var myTable = document.getElementById("myTable");
+
+    // Defined inside the function so the data/table are in scope -
+    // alternatively, you could define it outside and pass them as
+    // parameters.
+   
+
+ function setCells(hours) {
+        var times = [];
+   
+        
+
+        for (var i = 0; i < cellData.length ; i ++) {
+          for (var j = 1; j < 16 ; j +=2) { 
+            var date = moment(cellData[i]).add(hours, 'h').format('MM/DD/YYYY hh:mm a');
+            times.push(date);
+
+            myTable.rows[j].cells[0].innerHTML = times[i];
+        }
+    }
+}
+    switch (document.getElementById("sel1").value) {
+        case "VIC":
+            setCells(0);
+            break;
+        case "NSW":
+            setCells(11);
+            break;
+        case "QLD":
+            setCells(2);
+            break;
+        case "WA":
+            setCells(3);
+            break;
+        case "SA":
+            setCells(4);
+            break;
+        case "TAS":
+            setCells(5);
+            break;
+        case "NT":
+            setCells(6);
+            break;
+        case "ACT":
+            setCells(7);
+            break;
+    }
+};
+
+</script>
+
+<script> <!--On Load Function -->
+
+function loadFunction () {
+
+ var cellData = ["2016-08-24 15:45", "2016-08-24 16:00","2016-08-24 16:00","2016-08-24 15:45", "2016-08-24 16:00","2016-08-24 16:00","2016-08-24 15:45", "2016-08-24 15:45"];
+ 
+ var myTable = document.getElementById("myTable");
+
+ var times = [];  
+
+ for (var x =0; x < cellData.length ; x++) {
+                                                                        
+
+                           var date = moment(cellData[x]).format('MM/DD/YYYY hh:mm a');
+                           times.push(date); 
+                           
+
+for (var j = 1; j < 16 ; j +=2) { 
+
+
+            myTable.rows[j].cells[0].innerHTML = times[x];             
+
+                           
+  }
+ }
+}
+
+</script>
+
+<script> <!--Today Sport Button Function -->
+
+function todaySport () {
+
+alert("yes");
+
+}
+
+</script>
+
+<script> <!--2moro Sport Button Function -->
+
+function moroSport() {
+
+alert("no");
+
+}
+
+</script>
+
 </html>
